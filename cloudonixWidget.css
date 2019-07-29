@@ -262,11 +262,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?4rvg2o');
-    src:  url('fonts/icomoon.eot?4rvg2o#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4rvg2o') format('truetype'),
-    url('fonts/icomoon.woff?4rvg2o') format('woff'),
-    url('fonts/icomoon.svg?4rvg2o#icomoon') format('svg');
+    src:  url('fonts/icomoon.eot?9gf75e');
+    src:  url('fonts/icomoon.eot?9gf75e#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9gf75e') format('truetype'),
+    url('fonts/icomoon.woff?9gf75e') format('woff'),
+    url('fonts/icomoon.svg?9gf75e#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -286,6 +286,45 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone-off:before {
+    content: "\e901";
+}
+.icon-phone-missed:before {
+    content: "\e902";
+}
+.icon-phone-call:before {
+    content: "\e903";
+}
+.icon-mic:before {
+    content: "\e904";
+}
+.icon-phone-outgoing:before {
+    content: "\e905";
+}
+.icon-phone-forwarded:before {
+    content: "\e906";
+}
+.icon-mic-off:before {
+    content: "\e907";
+}
+.icon-smartphone:before {
+    content: "\e908";
+}
+.icon-phone-incoming:before {
+    content: "\e909";
+}
+.icon-phone1:before {
+    content: "\e90a";
+}
+.icon-phone:before {
+    content: "\e900";
+}
+.icon-github:before {
+    content: "\f09b";
+}
+.icon-github-alt:before {
+    content: "\f113";
+}
 .icon-github-square:before {
     content: "\f092";
 }
