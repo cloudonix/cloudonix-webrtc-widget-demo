@@ -2,44 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cloudonix WebSDK Widget Demo</title>
+    <style>
+        .cxWidget {
+            left: 0px;
+            right: auto;
+            border: 0px none;
+            position: fixed;
+            width: 115px;
+            height: 115px;
+            max-width: 330px;
+            max-height: 610px;
+            overflow: hidden;
+            bottom: 0px;
+            top: auto;
+            left: 0px;
+            right: auto;
+            z-index: 99999999 !important;
+        }
+
+        .cxWidgetContent {
+            height: 100%;
+            width: 100%;
+            border: 0px none;
+        }
+    </style>
 </head>
 <body>
-<script>
-    (function () {
-
-        var docDivElementName = 'cxWidgetElement';
-        var iframeDivStyle = '';
-
-        iframeDivStyle += 'left: 0px; ';
-        iframeDivStyle += 'right: auto; ';
-        iframeDivStyle += 'border: 0px none; ';
-        iframeDivStyle += 'position: fixed; ';
-        iframeDivStyle += 'width: 115px; ';
-        iframeDivStyle += 'height: 115px; ';
-        iframeDivStyle += 'max-width: 330px; ';
-        iframeDivStyle += 'max-height: 610px; ';
-        iframeDivStyle += 'overflow: hidden; ';
-        iframeDivStyle += 'bottom: 0px; ';
-        iframeDivStyle += 'top: auto; ';
-        iframeDivStyle += 'z-index: -99999999 !important;';
-
-        var docDivElement = document.createElement('div');
-
-        docDivElement.setAttribute('style', iframeDivStyle);
-        docDivElement.setAttribute('name', docDivElementName);
-        docDivElement.setAttribute('id', docDivElementName);
-        document.body.appendChild(docDivElement);
-
-        var tDiv = setInterval(function () {
-            var docIframeElement = document.getElementById(docDivElementName);
-            if ((docIframeElement != null) && (typeof docIframeElement !== 'undefined')) {
-                clearInterval(tDiv);
-                docIframeElement.innerHTML = '<iframe src="cloudonixWidget.html" allow="microphone; camera;" scrolling="no" style="height: 100%; width: 100%; border: 0px none;"></iframe>';
-            }
-        }, 100)
-    })();
-
-</script>
+<div class="cxWidget" name="cxWidgetElement" id="cxWidgetElement">
+    <iframe src="cloudonixWidget.html" allow="microphone; camera;" scrolling="no" class="cxWidgetContent"></iframe>
+</div>
 </body>
 </html>
